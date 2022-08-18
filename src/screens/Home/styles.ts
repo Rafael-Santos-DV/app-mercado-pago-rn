@@ -131,3 +131,17 @@ export const RowLevelSix = styled(LinearGradient).attrs({
   border-radius: 6px;
   margin-top: 10px;
 `;
+
+export const ContainerServices = styled.View`
+  padding: 20px;
+  background-color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  border-radius: 5px;
+  margin-top: 20px;
+`;
+
+export const RowWrapper = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+`;

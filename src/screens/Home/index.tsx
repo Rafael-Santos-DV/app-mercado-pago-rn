@@ -6,6 +6,7 @@ import {
 import React from "react";
 import { Image, Text } from "react-native";
 import CardHeader from "../../components/CardHeader";
+import Service from "../../components/Service";
 import {
   Box,
   BoxHeadphone,
@@ -13,6 +14,7 @@ import {
   BoxProfile,
   Cards,
   Container,
+  ContainerServices,
   ContentRight,
   Header,
   ImageCard,
@@ -20,6 +22,7 @@ import {
   MpContent,
   Profile,
   RowLevelSix,
+  RowWrapper,
   TextCard,
   TextPix,
   TextProfile,
@@ -93,6 +96,56 @@ export default function Home() {
             style={{ width: 14, height: 10 }}
           />
         </RowLevelSix>
+        <ContainerServices>
+          <RowWrapper>
+            <Service
+              title="Área Pix"
+              image={require("../../assets/pix_green.png")}
+            />
+
+            <Service
+              style={{ width: 20, height: 35 }}
+              title="Recarregar celular"
+              image={require("../../assets/recarga.png")}
+            />
+
+            <Service
+              style={{ width: 26, height: 30 }}
+              title="Recarregar TV pré-paga"
+              image={require("../../assets/recarregar_tv.png")}
+            />
+
+            <Service
+              style={{ width: 30, height: 25 }}
+              title="Contas e serviços"
+              image={require("../../assets/contas_e_servicos.png")}
+            />
+          </RowWrapper>
+          <RowWrapper>
+            <Service
+              title="Cobrar com link"
+              image={require("../../assets/cobrar_link.png")}
+            />
+
+            <Service
+              style={{ width: 30, height: 25 }}
+              title="Transferir dinheiro"
+              image={require("../../assets/transferir.png")}
+            />
+
+            <Service
+              style={{ width: 36, height: 30 }}
+              title="Seguro para Vida"
+              image={require("../../assets/seguro_vida.png")}
+            />
+
+            <Service
+              style={{ width: 30, height: 25 }}
+              title="Ver mais"
+              image={require("../../assets/more.png")}
+            />
+          </RowWrapper>
+        </ContainerServices>
       </MpContent>
     </Container>
   );
