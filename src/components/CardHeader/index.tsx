@@ -1,11 +1,13 @@
 import * as React from "react";
 import { Image } from "react-native";
+import BoxCreditCard from "../BoxCreditCard";
 import MpButton from "../Button";
 import {
   BoxAmount,
   Container,
   More,
   RowOne,
+  RowThree,
   RowTwo,
   TextAmount,
 } from "./styles";
@@ -35,6 +37,9 @@ export default function CardHeader() {
         <MpButton title="Sacar" />
         <MpButton title="Empréstimo" />
       </RowTwo>
+      <RowThree>
+        <BoxCreditCard />
+      </RowThree>
     </Container>
   );
 }

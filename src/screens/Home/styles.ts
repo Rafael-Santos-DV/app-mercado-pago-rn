@@ -2,10 +2,10 @@ import styled from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
 
 export const Container = styled(LinearGradient).attrs({
-  colors: ["#009fe3", "#009fe3", "#fff", "#fff", "#fff", "#fff"],
+  colors: ["#009fe3", "#009fe3", "#ECECEC", "#ECECEC", "#ECECEC", "#fff"],
 })`
   flex: 1;
-  padding: 50px 10px 0;
+  padding: 50px 5px 0;
 `;
 
 export const Header = styled.View`
@@ -13,6 +13,7 @@ export const Header = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 `;
 
 export const Profile = styled.View`
@@ -21,8 +22,8 @@ export const Profile = styled.View`
 `;
 
 export const BoxProfile = styled.View`
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-right: 10px;
   padding: 5px;
   border-radius: 20px;
@@ -33,8 +34,8 @@ export const BoxProfile = styled.View`
 `;
 
 export const ImageProfile = styled.Image`
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 `;
 
 export const TextProfile = styled.Text`
@@ -81,4 +82,33 @@ export const MpContent = styled.ScrollView`
   width: 100%;
   margin-top: 20px;
   padding: 0 10px;
+`;
+
+export const CardHeader = styled.View``;
+
+export const Cards = styled.View`
+  margin-top: 20px;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const Box = styled.View`
+  flex: 1;
+  background-color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0 5px 0;
+`;
+export const ImageCard = styled.Image`
+  width: 30px;
+  height: 30px;
+`;
+export const TextCard = styled.Text`
+  flex: 1;
+  font-size: 10px;
+  margin-left: 10px;
 `;
