@@ -112,3 +112,22 @@ export const TextCard = styled.Text`
   font-size: 10px;
   margin-left: 10px;
 `;
+
+export const RowLevelSix = styled(LinearGradient).attrs({
+  colors: ["#a80e90", "#911287", "#361862", "#0F1A52"],
+  start: {
+    x: 0.2,
+    y: 0,
+  },
+  end: {
+    x: 1,
+    y: 2,
+  },
+})`
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+`;

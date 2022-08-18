@@ -4,7 +4,7 @@ import {
   Inter_800ExtraBold,
 } from "@expo-google-fonts/inter";
 import React from "react";
-import { Image } from "react-native";
+import { Image, Text } from "react-native";
 import CardHeader from "../../components/CardHeader";
 import {
   Box,
@@ -19,6 +19,7 @@ import {
   ImageProfile,
   MpContent,
   Profile,
+  RowLevelSix,
   TextCard,
   TextPix,
   TextProfile,
@@ -83,6 +84,15 @@ export default function Home() {
             <TextCard>Invista de um jeito fácil</TextCard>
           </Box>
         </Cards>
+        <RowLevelSix>
+          <Text style={{ color: "#fff", fontFamily: "Inter_300Light" }}>
+            Acesse o nível 6 por R$ 14,99/mês
+          </Text>
+          <Image
+            source={require("../../assets/right.png")}
+            style={{ width: 14, height: 10 }}
+          />
+        </RowLevelSix>
       </MpContent>
     </Container>
   );
