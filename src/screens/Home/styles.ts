@@ -145,3 +145,31 @@ export const RowWrapper = styled.View`
   align-items: flex-start;
   margin-bottom: 10px;
 `;
+
+export const SectionPaymentLink = styled.ScrollView`
+  flex: 1;
+  margin-top: 15px;
+`;
+
+export const ContainerLink = styled.View<{ width: number }>`
+  width: ${({ width }) => `${width - 60}px`};
+  flex-direction: row;
+  background-color: ${({ theme: { COLORS } }) => COLORS.BLUE_BLACK};
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 4px;
+`;
+
+export const LinkText = styled.Text`
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  font-size: 12px;
+  font-family: "Inter_300Light";
+`;
+
+export const Background = styled.Image`
+  flex: 0.5;
+  height: 90px;
+`;

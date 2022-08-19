@@ -4,29 +4,36 @@ import {
   Inter_800ExtraBold,
 } from "@expo-google-fonts/inter";
 import React from "react";
-import { Image, Text } from "react-native";
+import { Dimensions, Image, Text, View } from "react-native";
 import CardHeader from "../../components/CardHeader";
 import Service from "../../components/Service";
+
 import {
+  Background,
   Box,
   BoxHeadphone,
   BoxPix,
   BoxProfile,
   Cards,
   Container,
+  ContainerLink,
   ContainerServices,
   ContentRight,
   Header,
   ImageCard,
   ImageProfile,
+  LinkText,
   MpContent,
   Profile,
   RowLevelSix,
   RowWrapper,
+  SectionPaymentLink,
   TextCard,
   TextPix,
   TextProfile,
 } from "./styles";
+
+const screenWidth = Dimensions.get("window").width;
 
 export default function Home() {
   const [fontLoad] = useFonts({
@@ -146,6 +153,45 @@ export default function Home() {
             />
           </RowWrapper>
         </ContainerServices>
+        <SectionPaymentLink
+          horizontal={true}
+          decelerationRate={"fast"}
+          snapToAlignment={"center"}
+          pagingEnabled
+          maxToRenderPerBatch={3}
+          initialNumToRender={0}
+          windowSize={3}
+        >
+          <ContainerLink width={screenWidth}>
+            <View style={{ flex: 1, padding: 8 }}>
+              <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
+                Link de pagamento
+              </LinkText>
+              <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
+            </View>
+            <Background source={require("../../assets/bg-blue.jpg")} />
+          </ContainerLink>
+
+          <ContainerLink width={screenWidth}>
+            <View style={{ flex: 1, padding: 8 }}>
+              <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
+                Link de pagamento
+              </LinkText>
+              <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
+            </View>
+            <Background source={require("../../assets/bg-blue.jpg")} />
+          </ContainerLink>
+
+          <ContainerLink width={screenWidth}>
+            <View style={{ flex: 1, padding: 8 }}>
+              <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
+                Link de pagamento
+              </LinkText>
+              <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
+            </View>
+            <Background source={require("../../assets/bg-blue.jpg")} />
+          </ContainerLink>
+        </SectionPaymentLink>
       </MpContent>
     </Container>
   );

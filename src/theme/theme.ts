@@ -6,5 +6,6 @@ export const theme = {
     NAVY_BLUE: "#ecf5fa",
     BACKGROUND_BLACK: "#1C222E",
     GREY_CARD: "#4b4f58",
+    BLUE_BLACK: "#2D3276",
   },
 };
