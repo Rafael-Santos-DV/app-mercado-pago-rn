@@ -16,18 +16,18 @@ import {
   BoxProfile,
   Cards,
   Container,
-  ContainerLink,
   ContainerServices,
   ContentRight,
   Header,
   ImageCard,
   ImageProfile,
+  ItemSlide,
   LinkText,
   MpContent,
   Profile,
   RowLevelSix,
   RowWrapper,
-  SectionPaymentLink,
+  SectionSlide,
   TextCard,
   TextPix,
   TextProfile,
@@ -153,7 +153,7 @@ export default function Home() {
             />
           </RowWrapper>
         </ContainerServices>
-        <SectionPaymentLink
+        <SectionSlide
           horizontal={true}
           decelerationRate={"fast"}
           snapToAlignment={"center"}
@@ -161,8 +161,9 @@ export default function Home() {
           maxToRenderPerBatch={3}
           initialNumToRender={0}
           windowSize={3}
+          showsHorizontalScrollIndicator={false}
         >
-          <ContainerLink width={screenWidth}>
+          <ItemSlide width={screenWidth} style={{ backgroundColor: "#2D3276" }}>
             <View style={{ flex: 1, padding: 8 }}>
               <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
                 Link de pagamento
@@ -170,28 +171,28 @@ export default function Home() {
               <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
             </View>
             <Background source={require("../../assets/bg-blue.jpg")} />
-          </ContainerLink>
+          </ItemSlide>
 
-          <ContainerLink width={screenWidth}>
+          <ItemSlide width={screenWidth}>
             <View style={{ flex: 1, padding: 8 }}>
               <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
-                Link de pagamento
+                Seguro para vida
               </LinkText>
-              <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
+              <LinkText>O único com telemedicina diretamente no app!</LinkText>
             </View>
-            <Background source={require("../../assets/bg-blue.jpg")} />
-          </ContainerLink>
+            <Background source={require("../../assets/medico.jpg")} />
+          </ItemSlide>
 
-          <ContainerLink width={screenWidth}>
+          <ItemSlide width={screenWidth}>
             <View style={{ flex: 1, padding: 8 }}>
               <LinkText style={{ fontSize: 8, marginBottom: 5 }}>
-                Link de pagamento
+                Investimentos
               </LinkText>
-              <LinkText>Cobre pelo whatsapp com o link de pagamento</LinkText>
+              <LinkText>Comece a investir aparti de R$ 1</LinkText>
             </View>
-            <Background source={require("../../assets/bg-blue.jpg")} />
-          </ContainerLink>
-        </SectionPaymentLink>
+            <Background source={require("../../assets/graphic.jpg")} />
+          </ItemSlide>
+        </SectionSlide>
       </MpContent>
     </Container>
   );

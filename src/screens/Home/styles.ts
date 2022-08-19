@@ -146,15 +146,15 @@ export const RowWrapper = styled.View`
   margin-bottom: 10px;
 `;
 
-export const SectionPaymentLink = styled.ScrollView`
+export const SectionSlide = styled.ScrollView`
   flex: 1;
   margin-top: 15px;
 `;
 
-export const ContainerLink = styled.View<{ width: number }>`
+export const ItemSlide = styled.View<{ width: number }>`
   width: ${({ width }) => `${width - 60}px`};
   flex-direction: row;
-  background-color: ${({ theme: { COLORS } }) => COLORS.BLUE_BLACK};
+  background-color: #01b1ea;
   border-radius: 5px;
   padding: 5px;
   margin: 0 4px;
@@ -166,7 +166,7 @@ export const LinkText = styled.Text`
   flex-direction: row;
   color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
   font-size: 12px;
-  font-family: "Inter_300Light";
+  font-family: "Inter_800ExtraBold";
 `;
 
 export const Background = styled.Image`
