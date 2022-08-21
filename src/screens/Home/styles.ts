@@ -1,8 +1,8 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
 
 export const Container = styled(LinearGradient).attrs({
-  colors: ["#009fe3", "#009fe3", "#ECECEC", "#ECECEC", "#ECECEC", "#fff"],
+  colors: ["#009fe3", "#009fe3", "#ECECEC", "#ECECEC", "#ECECEC"],
 })`
   flex: 1;
   padding: 50px 5px 0;
@@ -172,4 +172,51 @@ export const LinkText = styled.Text`
 export const Background = styled.Image`
   flex: 0.5;
   height: 90px;
+`;
+
+export const RowSallary = styled.View`
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+`;
+
+export const ContentText = styled.View`
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  padding: 0 10px;
+`;
+
+export const RowAlign = styled.View`
+  padding: 0 10px;
+  background-color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  border-radius: 4px;
+  margin-top: 10px;
+`;
+
+export const Wrapper = styled.View<{ borderTopBottom?: boolean }>`
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+
+  ${({ borderTopBottom }) =>
+    borderTopBottom
+      ? css`
+          border-color: rgba(0, 0, 0, 0.1);
+          border-bottom-width: 1px;
+          border-top-width: 1px;
+        `
+      : ``}
+`;
+
+export const TextA = styled.Text`
+  margin-left: 10px;
+`;
+
+export const ImageService = styled.Image`
+  width: 45px;
+  height: 45px;
 `;

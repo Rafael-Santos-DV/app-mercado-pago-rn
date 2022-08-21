@@ -6,6 +6,7 @@ import {
 import React from "react";
 import { Dimensions, Image, Text, View } from "react-native";
 import CardHeader from "../../components/CardHeader";
+import CardLevelSix from "../../components/CardLevelSix";
 import Service from "../../components/Service";
 
 import {
@@ -18,19 +19,25 @@ import {
   Container,
   ContainerServices,
   ContentRight,
+  ContentText,
   Header,
   ImageCard,
   ImageProfile,
+  ImageService,
   ItemSlide,
   LinkText,
   MpContent,
   Profile,
+  RowAlign,
   RowLevelSix,
+  RowSallary,
   RowWrapper,
   SectionSlide,
+  TextA,
   TextCard,
   TextPix,
   TextProfile,
+  Wrapper,
 } from "./styles";
 
 const screenWidth = Dimensions.get("window").width;
@@ -81,7 +88,7 @@ export default function Home() {
         </ContentRight>
       </Header>
 
-      <MpContent>
+      <MpContent showsVerticalScrollIndicator={false}>
         <CardHeader />
         <Cards>
           <Box>
@@ -193,6 +200,36 @@ export default function Home() {
             <Background source={require("../../assets/graphic.jpg")} />
           </ItemSlide>
         </SectionSlide>
+
+        <RowSallary>
+          <Image
+            source={require("../../assets/money.jpg")}
+            style={{ height: 50, width: 60 }}
+          />
+
+          <ContentText>
+            <Text style={{ fontFamily: "Inter_300Light" }}>
+              Traga seu salário para o mercado pago para ter diversas vantagens.
+            </Text>
+          </ContentText>
+          <Text style={{ fontFamily: "Inter_300Light", fontSize: 20 }}>x</Text>
+        </RowSallary>
+        <RowAlign>
+          <Wrapper>
+            <ImageService source={require("../../assets/point.jpg")} />
+            <TextA>Recomende a Point e ganhe R$ 110</TextA>
+          </Wrapper>
+          <Wrapper borderTopBottom>
+            <ImageService source={require("../../assets/indique.jpg")} />
+            <TextA>Indique o app e ganhe R$ 20</TextA>
+          </Wrapper>
+          <Wrapper>
+            <ImageService source={require("../../assets/vounch.jpg")} />
+            <TextA>Insira seu cupom</TextA>
+          </Wrapper>
+        </RowAlign>
+
+        <CardLevelSix />
       </MpContent>
     </Container>
   );
