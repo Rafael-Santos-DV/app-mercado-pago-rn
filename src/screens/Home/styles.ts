@@ -220,3 +220,33 @@ export const ImageService = styled.Image`
   width: 45px;
   height: 45px;
 `;
+
+export const SectionActivities = styled.View`
+  background-color: ${({ theme: { COLORS } }) => COLORS.COLOR_WHITE};
+  margin-top: 10px;
+  border-radius: 5px;
+`;
+
+export const TitleAc = styled.Text`
+  font-family: "Inter_800ExtraBold";
+  padding: 10px 0;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 14px;
+  margin-bottom: 5px;
+`;
+
+export const FooterAc = styled.View`
+  border-top-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+`;
+
+export const TextAc = styled.Text`
+  color: ${({ theme: { COLORS } }) => COLORS.BACKGROUND_BLUE_WAFE};
+  font-size: 13px;
+  font-family: "Inter_800ExtraBold";
+`;

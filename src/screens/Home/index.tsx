@@ -5,6 +5,7 @@ import {
 } from "@expo-google-fonts/inter";
 import React from "react";
 import { Dimensions, Image, Text, View } from "react-native";
+import Activities from "../../components/Activities";
 import CardHeader from "../../components/CardHeader";
 import CardLevelSix from "../../components/CardLevelSix";
 import Service from "../../components/Service";
@@ -20,6 +21,7 @@ import {
   ContainerServices,
   ContentRight,
   ContentText,
+  FooterAc,
   Header,
   ImageCard,
   ImageProfile,
@@ -32,11 +34,14 @@ import {
   RowLevelSix,
   RowSallary,
   RowWrapper,
+  SectionActivities,
   SectionSlide,
   TextA,
+  TextAc,
   TextCard,
   TextPix,
   TextProfile,
+  TitleAc,
   Wrapper,
 } from "./styles";
 
@@ -230,6 +235,32 @@ export default function Home() {
         </RowAlign>
 
         <CardLevelSix />
+
+        <SectionActivities>
+          <TitleAc>Sua última atividade</TitleAc>
+          <Activities
+            dateAt="quarta feira"
+            label="Você pagou"
+            price={12}
+            source={require("../../assets/purse.jpg")}
+          />
+          <Activities
+            dateAt="quarta feira"
+            label="Você pagou"
+            price={12}
+            source={require("../../assets/purse.jpg")}
+          />
+          <Activities
+            dateAt="quarta feira"
+            label="Você pagou"
+            price={12}
+            source={require("../../assets/purse.jpg")}
+          />
+          <FooterAc>
+            <TextAc>Ver toda sua atividade</TextAc>
+            <TextAc>{">"}</TextAc>
+          </FooterAc>
+        </SectionActivities>
       </MpContent>
     </Container>
   );
