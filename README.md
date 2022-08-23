@@ -8,8 +8,9 @@
 </p>
 
 ## Preview Project
-
+<div align="center">
  <img alt="App Mercado pago" src="./.github/screen.png" align="center" />
+</div>
 
 ## 🚀 How to use
 
