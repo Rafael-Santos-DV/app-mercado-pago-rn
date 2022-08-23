@@ -9,7 +9,7 @@
 
 ## Preview Project
 <div align="center">
- <img alt="App Mercado pago" src="./.github/screen.png" align="center" />
+ <img alt="App Mercado pago" src="./.github/screen.png" align="center" height="300px"/>
 </div>
 
 ## 🚀 How to use
