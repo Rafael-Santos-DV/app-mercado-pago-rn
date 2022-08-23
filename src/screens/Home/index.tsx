@@ -8,6 +8,7 @@ import { Dimensions, Image, Text, View } from "react-native";
 import Activities from "../../components/Activities";
 import CardHeader from "../../components/CardHeader";
 import CardLevelSix from "../../components/CardLevelSix";
+import Footer from "../../components/Footer";
 import Service from "../../components/Service";
 
 import {
@@ -239,21 +240,21 @@ export default function Home() {
         <SectionActivities>
           <TitleAc>Sua última atividade</TitleAc>
           <Activities
-            dateAt="quarta feira"
-            label="Você pagou"
-            price={12}
+            dateAt="Quarta-Feira"
+            label="Você pagou PAG*JOÃO"
+            price="-100"
             source={require("../../assets/purse.jpg")}
           />
           <Activities
             dateAt="quarta feira"
-            label="Você pagou"
-            price={12}
+            label="Você pagou Souza"
+            price="-300"
             source={require("../../assets/purse.jpg")}
           />
           <Activities
             dateAt="quarta feira"
-            label="Você pagou"
-            price={12}
+            label="Você pagou Júlio"
+            price="-50"
             source={require("../../assets/purse.jpg")}
           />
           <FooterAc>
@@ -262,6 +263,7 @@ export default function Home() {
           </FooterAc>
         </SectionActivities>
       </MpContent>
+      <Footer />
     </Container>
   );
 }

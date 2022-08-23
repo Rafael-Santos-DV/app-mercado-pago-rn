@@ -5,7 +5,7 @@ export const Container = styled(LinearGradient).attrs({
   colors: ["#009fe3", "#009fe3", "#ECECEC", "#ECECEC", "#ECECEC"],
 })`
   flex: 1;
-  padding: 50px 5px 0;
+  padding: 50px 0 0 0;
 `;
 
 export const Header = styled.View`

@@ -12,7 +12,7 @@ import {
 type TypeActivities = {
   source: ImageSourcePropType;
   label: string;
-  price: number;
+  price: string;
   dateAt: string;
 };
 
@@ -27,9 +27,7 @@ const Activities: React.FC<TypeActivities> = ({
       <ImageAc source={source} />
       <Label>{label}</Label>
       <ValueAndDate>
-        <Price>
-          {price < 0 && "-"}R$ {price}
-        </Price>
+        <Price>R$ {price}</Price>
         <DateAt>{dateAt}</DateAt>
       </ValueAndDate>
     </BoxActivities>

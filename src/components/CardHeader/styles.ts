@@ -23,7 +23,7 @@ export const BoxAmount = styled.View`
 export const TextAmount = styled.Text`
   font-size: 25px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 2px;
 `;
 
 export const More = styled.View`
