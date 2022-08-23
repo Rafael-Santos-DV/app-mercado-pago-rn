@@ -1,4 +1,4 @@
-# TypeScript Example
+# Clone Mercado Pago App with React Native
 
 <p>
   <!-- Android -->
