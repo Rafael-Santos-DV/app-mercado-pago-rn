@@ -17,7 +17,7 @@ export default function CardHeader() {
     <Container>
       <RowOne>
         <BoxAmount>
-          <TextAmount>R$ 10.000</TextAmount>
+          <TextAmount>R$ 2.000</TextAmount>
           <Image
             style={{ width: 44, height: 34 }}
             source={require("../../assets/eye-not.png")}

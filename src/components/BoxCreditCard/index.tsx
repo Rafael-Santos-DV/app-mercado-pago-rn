@@ -42,7 +42,7 @@ const BoxCreditCard: React.FC = () => {
         </FirstRow>
 
         <CardText style={{ fontSize: 13 }}>Limite disponível</CardText>
-        <Balance>R$ 10.000</Balance>
+        <Balance>R$ 1.000</Balance>
         <CardText style={{ fontSize: 11 }}>Fatura vence em 17/08</CardText>
       </ColumnOne>
       <ColumnTwo>
